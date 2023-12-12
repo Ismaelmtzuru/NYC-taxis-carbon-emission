@@ -1,7 +1,7 @@
 # **Pipeline**
  
-[![Pipeline Stack Tecnologico](Pipeline_Stack_Tecnológico.jpg)](Ruta/Pipeline_Stack_Tecnológico.jpg)
-<a href="Ruta/Pipeline_Stack_Tecnológico.jpg" target="_blank"><img src="Stack Tecnológico/Pipeline_Stack_Tecnológico.jpg" alt="Pipeline Stack Tecnológico" width="800"></a>
+![Pipeline Stack Tecnologico](Pipeline_Stack_Tecnológico.jpg)
+
 
 
 
@@ -38,4 +38,4 @@ Para consultas y manejo de bases de datos relacionales, emplearemos el lenguaje 
 - [**Apache Airflow:**](Apache_airflow.md) Herramienta de orquestación para la automatización de flujos de trabajo.
 
 ## Biblioteca de Análisis de Datos y Modelado
-- [**Pycaret:**](Pycaret.md) Biblioteca de Python diseñada para simplificar el proceso de análisis de datos y modelado de Machine Learning.
+- [**Pycaret:**](PYCARET.md) Biblioteca de Python diseñada para simplificar el proceso de análisis de datos y modelado de Machine Learning.
