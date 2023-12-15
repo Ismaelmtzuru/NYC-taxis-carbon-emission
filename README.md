@@ -1,4 +1,4 @@
-![auto 2](https://github.com/Ismaelmtzuru/NYC-taxis-carbon-emission/assets/105239369/0b97bcee-3244-43b6-997f-8c8fc80ff6d6)
+![auto 2](https://github.com/Ismaelmtzuru/NYC-taxis-carbon-emission/assets/105239369/bf4162d1-6d6f-4251-a2ad-eed466c871fc)
 
 # Análisis Integral del Transporte de Pasajeros en Nueva York y su Impacto
 
