@@ -1,6 +1,6 @@
 ### Estructura de Datos Implementada:
-
-Para estructurar los datos, se pueden utilizar varios elementos. Aquí propongo una estructura simple con un Data Lake y un Data Warehouse:
+Para la estructura de los datos, se utilizan varios elementos. 
+Se estructuran en data lakes de raw y clean, y la base de datos bd.
 
 #### 1. Data Lake (Raw):
 
@@ -34,7 +34,7 @@ Aquí, los archivos parquet son versiones limpias de los datos originales.
 
 #### 3. Data Warehouse:
 
-El Data Warehouse almacena datos listos para el análisis y consultas. Puedes usar SQLite como base de datos, pero para implementaciones más avanzadas, considera bases de datos como PostgreSQL, MySQL o soluciones en la nube como Google BigQuery o Amazon Redshift.
+El Data Warehouse almacena datos listos para el análisis y consultas. 
 
 ```
 data_warehouse/
@@ -46,11 +46,10 @@ En este caso, `bd.db` es la base de datos SQLite que contiene las tablas estruct
 Con esta estructura, se mantiene una separación clara entre los datos brutos y procesados. 
 
 
-Claro, continuemos. Ahora vamos a definir el modelo ER y crear pipelines para alimentar el Data Warehouse. Dado que en este caso estamos utilizando SQLite y asumiendo un esquema simplificado, no se necesitarán estructuras complejas de Data Warehouse ni ETL exhaustivo. Vamos a mantenerlo simple y directo.
 
 ### Modelo ER (Diagrama de Entidad-Relación)
 
-Asumiendo que tienes las siguientes entidades:
+Ejemplo de algunas entidades para el diagrama:
 
 1. `GreenTrips`
 2. `YellowTrips`
@@ -102,11 +101,10 @@ def cargar_en_data_warehouse(tabla_fuente, tabla_destino, conn):
     cursor.execute(query)
     conn.commit()
 
-# ... (Código anterior)
 
 # Iterar sobre los archivos descargados para cargar en Data Warehouse
 for archivo in descargados:
-    # ... (Código anterior)
+   
 
     # Obtener tipo de archivo
     tipo_archivo = archivo.split('_')[0].lower()
@@ -122,9 +120,7 @@ for archivo in descargados:
         # ... (Operaciones de limpieza y transformación para yellow)
         carga_sqlite(nombre_tabla, None, ruta_limpia, archivo)
         cargar_en_data_warehouse('yellow', 'YellowTrips', conn)
-    # ... (Agregar casos para 'fhv' y 'fhvhv')
-
-# ... (Código posterior)
+    
 ```
 
 Este código simplemente ejecuta una consulta SQL para insertar los datos desde las tablas limpias en las tablas correspondientes del Data Warehouse.
