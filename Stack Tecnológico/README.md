@@ -1,6 +1,6 @@
 # **Pipeline**
  
-![Pipeline Stack Tecnologico](Pipeline_Stack_Tecnológico.jpg)
+![Pipeline Stack Tecnologico](StackTecnológico\Pipeline_stack_tecnologico.png)
 
 
 
@@ -36,4 +36,4 @@ La orquestación del trabajo se hace automatizando y creando tareas por medio de
 
 
 # Automatización del stack tecnológico (pipeline automatizado)
-Para una visualización más agradable, se puede ver en el siguiente archivo. [link](Stack Tecnológico\pipeline_automatizado.md)
+Para una visualización más agradable, se puede ver en el siguiente archivo. [link](Stack Tecnológico/pipeline_automatizado.md)
