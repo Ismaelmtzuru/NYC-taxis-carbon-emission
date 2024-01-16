@@ -2,6 +2,7 @@
 
 Para automatizar el proceso ETL, puedes utilizar un script de Python que maneje las tareas de extracción, transformación y carga de datos. Aquí proporciono un ejemplo simple que podrías adaptar según tus necesidades y entorno.
 
+# Importaciones
 ```python
 import os
 import sqlite3
@@ -64,9 +65,9 @@ def limpiar_y_guardar(archivo, output_directory, ruta_limpia):
     # Guardar en la carpeta "clean"
     df.to_parquet(os.path.join(ruta_limpia, archivo), index=False)
 
-    # ... (Cargar a la base de datos)
+   
 
-# Continuar con el código del scraping y ETL...
+
 ```
 
 Este script realiza la descarga y la limpieza de cada archivo, evitando descargarlos nuevamente si ya existen en la carpeta limpia. 
@@ -105,7 +106,7 @@ def crear_tabla(nombre_tabla, cursor):
             congestion_surcharge FLOAT
         )
         """
-    # ... (Añadir otras tablas según sea necesario)
+   
 
     cursor.execute(sql_command)
 
@@ -121,11 +122,11 @@ def carga_sqlite(nombre_tabla, comando_sql, ruta_limpia, archivo):
         df = pd.read_parquet(os.path.join(ruta_limpia, archivo))
         df.to_sql(nombre_tabla, conn, if_exists='append', index=False)
 
-# ... (Código anterior)
+
 
 # Iterar sobre los archivos descargados para limpiar y guardar en otra carpeta
 for archivo in descargados:
-    # ... (Código anterior)
+   
 
     # Obtener tipo de archivo
     tipo_archivo = archivo.split('_')[0].lower()
@@ -139,12 +140,6 @@ for archivo in descargados:
         nombre_tabla = 'yellow'
         # ... (Operaciones de limpieza y transformación para yellow)
         carga_sqlite(nombre_tabla, None, ruta_limpia, archivo)
-    # ... (Agregar casos para 'fhv' y 'fhvhv')
-
-# ... (Código posterior)
-```
-
-Este código asume que los datos se cargarán en la misma base de datos SQLite. Si prefieres utilizar un servicio diferente para el almacenamiento, el código puede necesitar ajustes. Además, ten en cuenta que las operaciones de limpieza y transformación deben completarse según los requisitos de tus datos.
 
 
 

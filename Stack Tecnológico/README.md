@@ -20,22 +20,20 @@ Utilizaremos **Python** como lenguaje principal para realizar tareas de Extract,
 [**Ejemplo**](ejemplo.md)
 
 ## Bases de Datos
-Para consultas y manejo de bases de datos relacionales, emplearemos el lenguaje **SQL**. Además, utilizaremos **Google BigQuery** para almacenar en la nube los datos recopilados mediante consultas SQL.
+- Base de datos en **DB Browser SQLite**
+Para consultas y manejo de bases de datos relacionales, emplearemos el lenguaje **SQL**. 
 
 ## Almacenamiento de Datos
-- [**Google Cloud Storage:**](storage.md) Servicio en la nube donde se alojarán los datos accesibles para Google BigQuery.
+- Estos datos se almacenarán en 2 data lakes. 
+1) El *raw* que es donde se almacenan los datos descargados por medio de _web scrapping_, llamadas a API´s e información recabada manualmente por la web.
 
-## Plataformas en la Nube
-- [**Google Cloud App Engine:**](app_engine.md) Plataforma en la nube que permite el deployment de aplicaciones web de manera escalable.
+## Desarrollo, despliegue de modelos y análisis de los datos
+- [**Pycaret:**](PYCARET.md) Biblioteca de Python diseñada para simplificar el proceso de análisis de datos y modelado de Machine Learning.
 
-## Entorno de Desarrollo Colaborativo
-- [**Google Colab:**](google_colab.md) Un entorno de Jupyter Notebook en la nube que facilita el análisis interactivo y colaborativo.
-
-## Desarrollo y Despliegue de Modelos
-- [**Google Cloud Vertex AI:**](vertex_ai.md) Servicio que permite la creación y despliegue de modelos de Machine Learning a gran escala.
 
 ## Orquestación de Trabajos
-- [**Apache Airflow:**](Apache_airflow.md) Herramienta de orquestación para la automatización de flujos de trabajo.
+La orquestación del trabajo se hace automatizando y creando tareas por medio de un script realizado en el lenguaje de programación *Python*
 
-## Biblioteca de Análisis de Datos y Modelado
-- [**Pycaret:**](PYCARET.md) Biblioteca de Python diseñada para simplificar el proceso de análisis de datos y modelado de Machine Learning.
+
+# Automatización del stack tecnológico (pipeline automatizado)
+Para una visualización más agradable, se puede ver en el siguiente archivo. [link](Stack Tecnológico\pipeline_automatizado.md)
