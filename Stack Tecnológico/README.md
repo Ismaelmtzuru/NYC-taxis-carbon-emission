@@ -1,6 +1,6 @@
 # **Pipeline**
  
-![Pipeline Stack Tecnologico](Pipeline_stack_tecnologico.png)
+![Pipeline Stack Tecnologico](stack.png)
 
 
 
