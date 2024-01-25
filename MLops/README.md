@@ -29,11 +29,12 @@ Este script utiliza PyCaret para desarrollar un modelo de series temporales con 
 
 # Predicción de costo de viaje a través de Machine learning
 En el siguiente [repositorio](https://github.com/Ismaelmtzuru/ml_deploy) se encuentra un *segundo* modelo de machine learning el cual puede ser consumido por un usuario que desee predecir el costo de un viaje en la ciudad de Nueva York (NYC).
-
+[App del modelo](https://ml-deploy-9c4d57010124.herokuapp.com/)
 
 
 
 # Documentación
+<br>
 
-[Documentación del modelo consumible 'predicción de costo de viaje'](https://github.com/Ismaelmtzuru/ml_deploy/blob/master/ml_consumible.ipynb)
+[Documentación del modelo consumible 'predicción de costo de viaje'](https://github.com/Ismaelmtzuru/ml_deploy/blob/master/ml_consumible.ipynb) <br>
 [Documentación del modelo 'ganancias de conductor'](docs_ml.md)
